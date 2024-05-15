@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuóng - Liên Minh Huyền Thoại</title>
+    <link rel="stylesheet" href="./css-code/style-hero.css">
+
+    <link rel="website icon" type="png"
+     href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/LoL_icon.svg/1200px-LoL_icon.svg.png">
+    <link rel="stylesheet" href="./icon/fontawesome-free-6.4.2-web/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Lora:ital,wght@1,500&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+    .list-header {
+      position: relative;
+      top: 7px;
+      left: 100px;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  
+    }
+  
+    .list-header li {
+      display: inline-flex;
+      padding: 15px;
+      position: relative;
+      cursor: pointer;
+      color: #f9f9f9;
+      font-size: 12px;
+  
+    }
+  
+    .list-header li:hover::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      background-color: rgb(0, 179, 255);
+      width: 100%;
+      height: 3px;
+      border-radius: 20px;
+    }
+  
+    .list-header li:hover {
+      background-color: rgba(128, 128, 128, 0.5);
+      border-radius: 10px;
+    }
+  
+    
+  
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 110%;
+      left: 0;
+      background-color: #292929;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(40, 4, 4, 0.2);
+      z-index: 1;
+  
+    }
+  
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
+  
+    .dropdown-content a {
+      padding: 20px 20px;
+      text-decoration: none;
+      display: block;
+      font-size: 12px;
+      color: #f9f9f9;
+  
+  
+  
+    }
+  
+    .dropdown-content a:hover {
+      background-color: rgba(128, 128, 128, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+  
+    }
+  
+    .dropdown-content a:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: rgb(0, 179, 255);
+      width: 100%;
+      height: 4px;
+      border-radius: 30px;
+    }
+  
+    .caret {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      margin-left: 5px;
+      vertical-align: middle;
+      border-top: 4px solid;
+      border-right: 4px solid transparent;
+      border-left: 4px solid transparent;
+    }
+  
+    .dropdown:hover .caret {
+      border-top-color: #000;
+    }
+  
+    #carouselExampleSlidesOnly {
+      background-image: url(https://kenh14cdn.com/thumb_w/660/203336854389633024/2022/10/11/photo-5-16654649837541459852675.jpg);
+  
+    }
+  
+    .custom-tooltip {
+      --bs-tooltip-bg: #0BC6E3;
+      --bs-tooltip-color: black;
+      font-size: 14px;
+      width: 200px;
+  
+    }
+    .offcanvas-body a{
+      text-decoration: none;
+      color: black;
+    }
+    .offcanvas-body a:hover{
+      color: red;
+    }
+  </style>
+<body>
+    <div class="header">
+        <button class="btn btn-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+          aria-controls="offcanvasTop">
+          <img src="./img/logo.png">
+          <i class="fa-solid fa-caret-down fa-beat fa-2xs" style="color: #a7a8a9;"></i>
+        </button>
+        <a href="./main.html"><img style="width:30px" src="./img/logo1.PNG" alt=""></a>
+        <ul class="list-header">
+          <li><b>TRÒ CHƠI</b></li>
+          <li><b><a style="text-decoration:none; color:#fff" href="./hero.html">TƯỚNG</a></b></li>
+          <li class="dropdown">
+            <p class="tintuc"><b>TIN TỨC</b><span class="caret"></span></p>
+            <div class="dropdown-content">
+              <a href="/news.html"><b>TẤT CẢ</b></a>
+              <a href="#"><B>CẬP NHẬT TRÒ CHƠI</B></a>
+              <a href="#"><B>ESPORT</B></a>
+              <a href="#"><B>ĐỘI NGŨ PHÁT TRIỂN</B></a>
+              <a href="#"><B>TRUYỀN THÔNG</B></a>
+            </div>
+          </li>
+          <li><b><a style="text-decoration:none; color:#fff" href="./update.html">CHI TIẾT CẬP NHẬT</a></b></li>
+          <li><b>ESPORT <i class="fa-solid fa-arrow-up-right-from-square fa-sm" style="color: #737373;"></i></b></li>
+          <li><B>VŨ TRỤ <i class="fa-solid fa-arrow-up-right-from-square fa-sm" style="color: #737373;"></i></B></li>
+          <li><B>HỖ TRỢ <i class="fa-solid fa-arrow-up-right-from-square fa-sm" style="color: #737373;"></i></B></li>
+        </ul>
+        <div class="list">
+          <a href="" class="fa-solid fa-magnifying-glass fa-beat"></a>
+          <a href="" class="fa-solid fa-triangle-exclamation fa-fade fa-lg"></a>
+          <div class="dropdown-sever">
+            <a href="#" class="fa-solid fa-globe"></a>
+            <div class="dropdown-content-sever">
+              <a href="#">Tiếng Việt</a>
+              <a href="#">English</a>
+              <a href="#">Argentine</a>
+              <a href="#">Brazil</a>
+            </div>
+          </div>
+          <button type="button" class="btn btn-secondary"><b><a style="text-decoration:none; color:#fff" target="_blank" href="/index-login.html">ĐĂNG NHẬP</a></b></button>
+
+          <button type="submit" class="btn btn-primary"><b>CHƠI NGAY</b></button>
+        </div>
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasTopLabel">RIOT GAMES</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <p><b>TRÒ CHƠI</b></p>
+            <a href="/main.html"><p>LIÊN MINH HUYỀN THOẠI</p></a>
+            <a href="https://teamfighttactics.leagueoflegends.com/vi-vn/?utm_medium=card2%2Bwww.leagueoflegends.com&utm_source=riotbar" target="_blank"><p>ĐẤU TRƯỜNG CHÂN LÝ</p></a>
+            <a href="https://playvalorant.com/vi-vn/?utm_medium=card3%2Bteamfighttactics.leagueoflegends.com&utm_source=riotbar" target="_blank"><P>VALORANT</P></a>
+            <a href="https://playruneterra.com/vi-vn/?utm_medium=card4%2Bplayvalorant.com&utm_source=riotbar" target="_blank"><P>HUYỀN THOẠI RUNETERRA</P></a>
+            <a href="https://wildrift.leagueoflegends.com/vi-vn/?utm_medium=card5%2Bplayruneterra.com&utm_source=riotbar" target="_blank"><P>LMHT: TỐC CHIẾN</P></a>
+      
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="grid text-center">
+        <div class="g-col-4">
+            <h3 style="font-size:24px"><i><b>CHỌN NGAY MỘT</b></i></h3>
+      <h1 style="font-size:54px"><b><i>TƯỚNG</i></b></h1>
+      <p style="font-size:13px">Với hơn 140 tướng, bạn chắc chắn sẽ tìm thấy một lựa chọn phù hợp với lối chơi của mình. Chọn một tướng tủ hoặc sử dụng điêu luyện tất cả.</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="categories">
+          <ul class="list-hero">
+            <li class="category" onclick="showImages('all')">TẤT CẢ</li>
+            <li class="category" onclick="showImages('assassin')">SÁT THỦ</li>
+            <li class="category" onclick="showImages('Fighters')">ĐẤU SĨ</li>
+            <li class="category" onclick="showImages('mage')">PHÁP SƯ</li>
+            <li class="category" onclick="showImages('Marksmen')">XẠ THỦ</li>
+            <li class="category" onclick="showImages('Supports')">HỖ TRỢ</li>
+            <li class="category" onclick="showImages('tank')">ĐỠ ĐÒN</li>
+          </ul>
+        </div>
+        <div class="image-gallery">
+          <div id="all" class="image-group">
+            <a href="aatrox.html"><img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt570145160dd39dca/5db05fa8347d1c6baa57be25/RiotX_ChampionList_aatrox.jpg?quality=90&width=250">
+            </a>
+            <a href="ahri.html">            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            </a>
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt80ff58fe809777ff/5db05fa8adc8656c7d24e7d6/RiotX_ChampionList_akali.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltdd84b33ec501c137/60f9ede33f40e5481e85c0c6/RiotX_ChampionList_akshan_v2.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt3b366925d2fd8fdb/5db05fa856458c6b3fc1750b/RiotX_ChampionList_alistar.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt40dfbe48a61c439f/5db05fa80b39e86c2f83dbf9/RiotX_ChampionList_amumu.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt3d24a1482453088a/5db05fa8df78486c826dcce8/RiotX_ChampionList_anivia.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt28c708665427aef6/5db05fa89481396d6bdd01a6/RiotX_ChampionList_annie.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt943aae038e2dee98/5db05fa8e9effa6ba5295f91/RiotX_ChampionList_ashe.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt5dd3569fc67d6664/5db05fa8bd24496c390ae4d8/RiotX_ChampionList_aurelionsol.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt0e3f847946232167/5db05fa889fb926b491ed7ff/RiotX_ChampionList_azir.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltbbe3ce0c0ae1305b/5db05fb23a326d6df6c0e7b3/RiotX_ChampionList_bard.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt9f765d79de67f50e/629ea266a3e9730f695d114a/RiotX_ChampionList_belveth.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltd7ef7e56ce1fe17b/5db05fb26af83b6d7032c8f8/RiotX_ChampionList_blitzcrank.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc8ca2e9bba653dda/5db05fb2dc674266df3d5d30/RiotX_ChampionList_brand.jpg?quality=90&width=250">            
+
+          </div>
+          <div id="assassin" class="image-group">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt80ff58fe809777ff/5db05fa8adc8656c7d24e7d6/RiotX_ChampionList_akali.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltdd84b33ec501c137/60f9ede33f40e5481e85c0c6/RiotX_ChampionList_akshan_v2.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt8d315d0ddcc546e6/64ffcd579e7ba67795caac6e/RiotX_ChampionList_briar_v2.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltf22ba7e6328e4376/5db05fbd242f426df132f963/RiotX_ChampionList_ekko.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">           
+           
+
+          </div>
+          <div id="Fighters" class="image-group">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt570145160dd39dca/5db05fa8347d1c6baa57be25/RiotX_ChampionList_aatrox.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+
+          </div>
+          <div id="mage" class="image-group">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt40dfbe48a61c439f/5db05fa80b39e86c2f83dbf9/RiotX_ChampionList_amumu.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">            
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+
+          </div>
+          <div id="Marksmen" class="image-group">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltdd84b33ec501c137/60f9ede33f40e5481e85c0c6/RiotX_ChampionList_akshan_v2.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">            
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+
+          </div>
+          <div id="Supports" class="image-group">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt3b366925d2fd8fdb/5db05fa856458c6b3fc1750b/RiotX_ChampionList_alistar.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">            
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+
+          </div>
+          <div id="tank" class="image-group">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt570145160dd39dca/5db05fa8347d1c6baa57be25/RiotX_ChampionList_aatrox.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">            
+            <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt1259276b6d1efa78/5db05fa86e8b0c6d038c5ca2/RiotX_ChampionList_ahri.jpg?quality=90&width=250">
+
+          </div>
+        </div>
+      </div>
+      <div class="end-1">
+        <div class="video-end">
+          <button style="background-color:#0BC6E3;" type="button" class="btn btn-primary"><b>CHƠI MIỄN PHÍ</b></button>
+          <video class="videokt" autoplay muted loop>
+            <source src="./video/Demacia vs Sylas - Season 2020 Cinematic - League of Legends.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="container-end">
+        <a href="#"><b>VỀ LIÊN MINH HUYỀN THOẠI</b></a>
+        <a href="#"><b>HỖ TRỢ</b></a>
+        <a href="#"><b>TRANG ESPORT CHÍNH</b></a>
+    
+      </div>
+      <div class="end">
+        <div class="icon-end">
+          <i style="color:#fff;" class="fa-brands fa-facebook"></i>
+          <i style="color:#fff" class="fa-brands fa-instagram"></i>
+          <i style="color:#fff" class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="logo-end">
+          <img src="./img/logoend.PNG" alt="">
+          <img style="position:relative; left:10px" src="./img/logovng.PNG" alt="">
+        </div>
+        <div class="text-end">
+          <span>© 2009-2022 bởi Tập Đoàn Riot Games. LIÊN MINH HUYỀN THOẠI và mọi logo liên quan là nhãn hiệu, nhãn hiệu
+            dịch vụ và/hoặc nhãn hiệu đã đăng ký của Tập Đoàn Riot Games.</span>
+        </div>
+        <div class="note-end">
+          <a href="#"><b>CHÍNH SÁCH BẢO MẬT</b></a>
+          <a href="#"><b>ĐIỀU KHOẢN SỬ DỤNG (RIOT)</b></a>
+          <a href="#"><b>TÙY CHỌN COOKIES</b></a>
+    
+        </div>
+        <div class="img-end">
+          <img
+            src="https://images.contentstack.io/v3/assets/blt0eb2a2986b796d29/bltec1400a54d36756e/5fa0d0031f9166620ed88513/vn-18plus.png?&height=100&disable=upscale"
+            alt="">
+        </div>
+      </div>
+      <script>
+        
+        function showImages(category) {
+            // Hiển thị nhóm ảnh tương ứng với mục đã chọn
+            var imageGroups = document.getElementsByClassName('image-group');
+            for (var i = 0; i < imageGroups.length; i++) {
+              imageGroups[i].style.display = 'none';
+            }
+            document.getElementById(category).style.display = 'block';
+          
+            // Đánh dấu mục đã chọn
+            var categories = document.getElementsByClassName('category');
+            for (var i = 0; i < categories.length; i++) {
+              categories[i].classList.remove('active');
+            }
+            event.target.classList.add('active');
+          }
+          document.addEventListener('DOMContentLoaded', function() {
+            showImages('all');
+          });    
+    </script>
+</body>
+</html>

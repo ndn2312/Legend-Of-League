@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AATROX - LOL Champion</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css-code/style-news-iteam.css">
+    <link rel="website icon" type="png"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/LoL_icon.svg/1200px-LoL_icon.svg.png">
+    <link rel="stylesheet" href="./icon/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Lora:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+    .list-header {
+        position: relative;
+        top: 7px;
+        left: 100px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .list-header li {
+        display: inline-flex;
+        padding: 15px;
+        position: relative;
+        cursor: pointer;
+        color: #f9f9f9;
+        font-size: 12px;
+
+    }
+
+    .list-header li:hover::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: rgb(0, 179, 255);
+        width: 100%;
+        height: 3px;
+        border-radius: 20px;
+    }
+
+    .list-header li:hover {
+        background-color: rgba(128, 128, 128, 0.5);
+        border-radius: 10px;
+    }
+
+    
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 110%;
+        left: 0;
+        background-color: #292929;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(40, 4, 4, 0.2);
+        z-index: 1;
+
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
+    .dropdown-content a {
+        padding: 20px 20px;
+        text-decoration: none;
+        display: block;
+        font-size: 12px;
+        color: #f9f9f9;
+
+
+
+    }
+
+    .dropdown-content a:hover {
+        background-color: rgba(128, 128, 128, 0.2);
+        padding: 20px;
+        border-radius: 10px;
+
+    }
+
+    .dropdown-content a:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgb(0, 179, 255);
+        width: 100%;
+        height: 4px;
+        border-radius: 30px;
+    }
+
+    .caret {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: 5px;
+        vertical-align: middle;
+        border-top: 4px solid;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+    }
+
+    .dropdown:hover .caret {
+        border-top-color: #000;
+    }
+    .offcanvas-body a{
+        text-decoration: none;
+        color: black;
+      }
+      .offcanvas-body a:hover{
+        color: red;
+      }
+</style>
+
+<body>
+    <div class="header">
+        <button class="btn btn-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+            aria-controls="offcanvasTop">
+            <img src="./img/logo.png">
+            <i class="fa-solid fa-caret-down fa-beat fa-2xs" style="color: #a7a8a9;"></i>
+        </button>
+        <a href="./main.html"><img style="width:30px" src="./img/logo1.PNG" alt=""></a>
+        <ul class="list-header">
+            <li><b>TRÒ CHƠI</b></li>
+            <li><b><a style="text-decoration:none; color:#fff" href="./hero.html">TƯỚNG</a></b></li>
+            <li class="dropdown">
+                <p class="tintuc"><b>TIN TỨC</b><span class="caret"></span></p>
+                <div class="dropdown-content">
+                    <a href="/news.html"><b>TẤT CẢ</b></a>
+                    <a href="#"><B>CẬP NHẬT TRÒ CHƠI</B></a>
+                    <a href="#"><B>ESPORT</B></a>
+                    <a href="#"><B>ĐỘI NGŨ PHÁT TRIỂN</B></a>
+                    <a href="#"><B>TRUYỀN THÔNG</B></a>
+                </div>
+            </li>
+            <li><b><a style="text-decoration:none; color:#fff" href="./update.html">CHI TIẾT CẬP NHẬT</a></b></li>
+            <li><b>ESPORT <i class="fa-solid fa-arrow-up-right-from-square fa-sm" style="color: #737373;"></i></b></li>
+            <li><B>VŨ TRỤ <i class="fa-solid fa-arrow-up-right-from-square fa-sm" style="color: #737373;"></i></B></li>
+            <li><B>HỖ TRỢ <i class="fa-solid fa-arrow-up-right-from-square fa-sm" style="color: #737373;"></i></B></li>
+        </ul>
+        <div class="list">
+            <a href="" class="fa-solid fa-magnifying-glass fa-beat"></a>
+            <a href="" class="fa-solid fa-triangle-exclamation fa-fade fa-lg"></a>
+            <a href="" class="fa-solid fa-globe"></a>
+            <button type="button" class="btn btn-secondary"><b><a style="text-decoration:none; color:#fff" target="_blank" href="/index-login.html">ĐĂNG NHẬP</a></b></button>
+            <button type="submit" class="btn btn-primary"><b>CHƠI NGAY</b></button>
+        </div>
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasTopLabel">RIOT GAMES</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <p><b>TRÒ CHƠI</b></p>
+              <a href="/main.html"><p>LIÊN MINH HUYỀN THOẠI</p></a>
+              <a href="https://teamfighttactics.leagueoflegends.com/vi-vn/?utm_medium=card2%2Bwww.leagueoflegends.com&utm_source=riotbar" target="_blank"><p>ĐẤU TRƯỜNG CHÂN LÝ</p></a>
+              <a href="https://playvalorant.com/vi-vn/?utm_medium=card3%2Bteamfighttactics.leagueoflegends.com&utm_source=riotbar" target="_blank"><P>VALORANT</P></a>
+              <a href="https://playruneterra.com/vi-vn/?utm_medium=card4%2Bplayvalorant.com&utm_source=riotbar" target="_blank"><P>HUYỀN THOẠI RUNETERRA</P></a>
+              <a href="https://wildrift.leagueoflegends.com/vi-vn/?utm_medium=card5%2Bplayruneterra.com&utm_source=riotbar" target="_blank"><P>LMHT: TỐC CHIẾN</P></a>
+        
+              </ul>
+            </div>
+          </div>
+    </div>
+    <div class="image-bk">
+    </div>
+    <div class="background-image">
+        <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltbbc1121df33e02de/6514fded6fefa7542ec4339d/100223_Voting_Article_Banner.jpg"
+            alt="">
+        <div class="caption">
+            <h5>Bình Chọn Chủ Đề Cho Trang Bị Mới!</h5>
+            <p>Hãy bình chọn cho chủ đề bạn muốn chúng tôi áp dụng cho trang bị mới, sắp ra mắt vào tháng 01/2024!</p>
+            <span >TÁC GIẢ ĐỘI NGŨ SUMMONER’S RIFT</span>
+        </div>
+    </div>
+    <div class="text">
+        <p></p>
+        <p>Nếu chẳng may bạn chưa biết, những thay đổi lớn về lối chơi của Mùa Giải 2024 sẽ tập trung đáng kể vào các
+            trang bị. Những <a href="https://www.leagueoflegends.com/vi-vn/news/dev/dev-ranked-schedule-changes/"
+                target="_blank">thay đổi này sẽ chính thức ra mắt vào tháng 1</a>, và chúng tôi muốn bạn góp sức tìm ra
+            chủ đề cho một trang bị mới sắp xuất hiện trong cửa hàng! </p>
+        <p></p>
+        <h2 style="text-align: center;">Cặp Đôi Thần Tốc</h2>
+        <p style="margin: auto; text-align: center;"><a
+                href="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltba16f073b704a240/6514f866b0132a139d6fa464/100223_Go_Fast_With_Friends_Icon.png"
+                target="_blank"><img data-image="zn0sd1ai9p1y"
+                    src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltba16f073b704a240/6514f866b0132a139d6fa464/100223_Go_Fast_With_Friends_Icon.png"
+                    data-sys-asset-uid="bltba16f073b704a240" alt="100223_Go_Fast_With_Friends_Icon.png"></a></p>
+        <p>Cặp Đôi Thần Tốc là một trang bị hỗ trợ đỡ đòn dành cho các vị tướng như Leona, Nautilus, Alistar, hoặc bất
+            kỳ tướng hỗ trợ cận chiến nào khác muốn cải thiện thêm đôi chút về tốc độ di chuyển và khả năng sống sót.
+        </p>
+        <p style="margin: auto; text-align: center;"><a
+                href="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt898dbda7c1b10b5c/6514f866cf50bfc717fff344/100223_Leona_Elixir_of_Iron_VFX.gif"
+                target="_blank"><img alt="100223_Leona_Elixir_of_Iron_VFX.gif" data-image="188x7mxon7fi"
+                    data-sys-asset-uid="blt898dbda7c1b10b5c"
+                    src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt898dbda7c1b10b5c/6514f866cf50bfc717fff344/100223_Leona_Elixir_of_Iron_VFX.gif"></a>
+        </p>
+        <br>
+
+        <p>Khi di chuyển, bạn sẽ nhận thêm tốc độ di chuyển. Khi đạt mức tối đa, bạn sẽ để lại một vệt phía sau giống
+            như Dược Phẩm Cứng Cáp, giúp tăng tốc độ cho các đồng minh đi theo bạn vào trận chiến. Đòn đánh đầu tiên của
+            bạn lên một Tướng địch sẽ tiêu hao cộng dồn và làm chậm kẻ địch.</p>
+        <p>Cặp Đôi Thần Tốc không trao nhiều tốc độ di chuyển cá nhân bằng Giáp Liệt Sĩ, nhưng trang bị này sẽ giúp bạn
+            đảo vị trí quanh bản đồ tốt hơn cùng đồng đội. Chúng tôi cũng sẽ thay thế khả năng làm chậm của Giáp Liệt Sĩ
+            bằng một hiệu ứng mang thiên hướng cá nhân hơn để phân biệt rõ rằng Cặp Đôi Thần Tốc là một trang bị hỗ trợ
+            đỡ đòn, còn Giáp Liệt Sĩ dành cho những người chơi muốn gia tăng sức mạnh của bản thân.</p>
+        <h2 style="text-align: center;">Vậy bạn sẽ phải làm gì?</h2>
+        <p>“Cặp Đôi Thần Tốc” là một cái tên chẳng hề "bắt tai" dành cho trang bị và không truyền tải được rõ ràng về
+            chủ đề. Ngoài ra, chúng tôi không thể để hiệu ứng hình ảnh của trang bị này giống y như Dược Phẩm Cứng Cáp.
+            Chúng tôi muốn bạn giúp tìm ra "diện mạo" cho Cặp Đôi Thần Tốc khi trang bị này được ra mắt! </p>
+        <p>Chúng tôi đã chuẩn bị sẵn ba ý tưởng độc đáo với chủ đề khu vực, biểu tượng và hiệu ứng hình ảnh riêng tương
+            ứng, vậy nên hãy bình chọn cho ý tưởng bạn yêu thích nhất từ <strong>01:00 Thứ Ba, ngày 03/10 - 07:00 Thứ
+                Bảy, ngày 07/10 (giờ Việt Nam) </strong>trong mục Tổng Quan của client. Không chần chừ thêm nữa, sau đây
+            là các ý tưởng!</p>
+        <br>
+        <hr>
+        <br>
+        <h2 style="text-align: center;">Lời Mời Kỳ Quái</h2>
+        <p style="margin: auto; text-align: center;"><a
+                href="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltf208007f584d8099/651b2bb63091584080f07e69/100223_EerieInvitationIcon.jpg"
+                target="_blank"><img data-image="7hdwkbjeiddf"
+                    src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt337ad5f6b2394871/651b2ca2f156d567e5af0b2f/100223_EerieInvitationIcon_v2.jpg"></a>
+        </p>
+        <figure style="margin: auto; text-align: center;"><a
+                href="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc936277920d1e710/6514f8665f359c0931843215/100223_EerieInvitationVFXConcept.jpg?disposition=inline"
+                target="_blank"><img data-image="3187oi488ph0"
+                    src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltc936277920d1e710/6514f8665f359c0931843215/100223_EerieInvitationVFXConcept.jpg"
+                    data-sys-asset-uid="bltc936277920d1e710" alt="100223_EerieInvitationVFXConcept.jpg"
+                    style="width: 860px;"></a></figure>
+        <br>
+
+        <p>Bạn không chắc mình đã nhặt nó lên từ khi nào... Nhưng trong túi của bạn xuất hiện một lá thư mà bạn chẳng hề
+            nhớ đã bỏ vào đó. Từ cõi sâu thẳm của Quần Đảo Bóng Đêm, một lời mời dự tiệc thôi thúc bạn không ngừng lao
+            về phía đích đến bằng nội tại mang tên <strong>Hắc Ám Vẫy Gọi.</strong></p>
+        <br>
+        <hr>
+        <br>
+        <h2 style="text-align: center;">Hành Trang Thám Hiểm</h2>
+        <p style="margin: auto; text-align: center;"><a
+                href="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt27b57fe111ba3348/651b2bb63df501632b5eb3f7/100223_TrailblazerIcon.jpg"
+                target="_blank"><img data-image="1at7mu7fdsa8"
+                    src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt7081e2aaec87b3c8/651b2ca2375d988b5b9cd99a/100223_TrailblazerIcon_v2.jpg"
+                    data-sys-asset-uid="blt0c9aa41afb81372f" alt="100223_TrailblazerIcon.jpg"></a></p>
+        <br>
+
+        <figure style="margin: auto; text-align: center;"><a
+                href="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt0a332ee0a06abd67/6514f86605fa0689d0f4d1b8/100223_TrailblazerVFXConcept.jpg?disposition=inline"
+                target="_blank"><img style="width: 860px;" data-image="hc6dzw3i8em5"
+                    src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt0a332ee0a06abd67/6514f86605fa0689d0f4d1b8/100223_TrailblazerVFXConcept.jpg"
+                    data-sys-asset-uid="blt0a332ee0a06abd67" alt="100223_TrailblazerVFXConcept.jpg"></a></figure>
+        <br>
+        <p>Mọi lữ khách băng qua sa mạc tại xứ Shurima đều ước rằng mình sở hữu món trang bị huyền thoại từ Nazumah này
+            để chỉ dẫn cho họ trên chuyến hành trình. Mang đầy công dụng hữu ích, nội tại <strong>Mở Đường Dẫn Lối
+            </strong>của trang bị này sẽ có thể giúp bạn cùng cả đội vượt qua được ngay cả những cuộc giao tranh nguy
+            hiểm nhất.</p>
+        <br>
+        <hr>
+        <br>
+        <h2 style="text-align: center;">Kèn Hiệu Trinh Sát</h2>
+        <p style="margin: auto; text-align: center;"><a
+                href="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt192556d3132ac1e5/651b2bb68dc13f16398ec97e/100223_ScoutsFanfareIcon.jpg"
+                target="_blank"><img data-image="gffe6k0ic6uw"
+                    src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt4fdc833422175634/651b2ca26e431156b6ed2575/100223_ScoutsFanfareIcon_v2.jpg"
+                    data-sys-asset-uid="blt43b00e2eecd61c17" alt="100223_ScoutsFanfareIcon.jpg"></a></p>
+        <br>
+        <figure style="margin: auto; text-align: center;"><a
+                href="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blte18932e0ed17bb8a/6514f8662a06d7603ff4fcf0/100223_ScoutsFanfareVFXConcept.jpg?disposition=inline"
+                target="_blank"><img style="width:860px" data-image="xf1lvrkfvanq"
+                    src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blte18932e0ed17bb8a/6514f8662a06d7603ff4fcf0/100223_ScoutsFanfareVFXConcept.jpg"
+                    data-sys-asset-uid="blte18932e0ed17bb8a" alt="100223_ScoutsFanfareVFXConcept.jpg"></a></figure>
+        <br>
+        <p>Kêu gọi toàn thể Đội Trinh Sát Bandle! Chiếc kèn này giúp triệu tập tất cả các Yordle và đảm bảo rằng Đội
+            Trinh Sát Bandle sẽ <strong>Dẫn Đường!</strong> (tên của nội tại) bằng những khúc nhạc đầy vui nhộn.</p>
+        <br>
+        <hr>
+        <br>
+        <p>Sau khi đã tìm ra ý tưởng giành chiến thắng, chúng tôi sẽ tiến hành hoàn thiện và đưa ra phiên bản cuối cùng,
+            sẵn sàng để cho ra mắt khi Mùa Giải 2024 bắt đầu vào tháng 1. Trong thời gian chờ đợi, hãy ghé qua trải
+            nghiệm Cặp Đôi Thần Tốc cùng tất cả những thay đổi khác về lối chơi của chúng tôi trên máy chủ PBE bắt đầu
+            từ ngày 20/11 nhé!</p>
+        </div>
+
+
+                <div class="end-1">
+                    <div class="video-end">
+                        <button style="background-color:#0BC6E3;" type="button" class="btn btn-primary"><b>CHƠI MIỄN
+                                PHÍ</b></button>
+                        <video class="videokt" autoplay muted loop>
+                            <source src="./video/Demacia vs Sylas - Season 2020 Cinematic - League of Legends.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="container-end">
+                    <a href="#"><b>VỀ LIÊN MINH HUYỀN THOẠI</b></a>
+                    <a href="#"><b>HỖ TRỢ</b></a>
+                    <a href="#"><b>TRANG ESPORT CHÍNH</b></a>
+
+                </div>
+                <div class="end">
+                    <div class="icon-end">
+                        <i style="color:#fff;" class="fa-brands fa-facebook"></i>
+                        <i style="color:#fff" class="fa-brands fa-instagram"></i>
+                        <i style="color:#fff" class="fa-brands fa-youtube"></i>
+                    </div>
+                    <div class="logo-end">
+                        <img src="./img/logoend.PNG" alt="">
+                        <img style="position:relative; left:10px" src="./img/logovng.PNG" alt="">
+                    </div>
+                    <div class="text-end">
+                        <span>© 2009-2022 bởi Tập Đoàn Riot Games. LIÊN MINH HUYỀN THOẠI và mọi logo liên quan là nhãn
+                            hiệu, nhãn
+                            hiệu
+                            dịch vụ và/hoặc nhãn hiệu đã đăng ký của Tập Đoàn Riot Games.</span>
+                    </div>
+                    <div class="note-end">
+                        <a href="#"><b>CHÍNH SÁCH BẢO MẬT</b></a>
+                        <a href="#"><b>ĐIỀU KHOẢN SỬ DỤNG (RIOT)</b></a>
+                        <a href="#"><b>TÙY CHỌN COOKIES</b></a>
+
+                    </div>
+                    <div class="img-end">
+                        <img src="https://images.contentstack.io/v3/assets/blt0eb2a2986b796d29/bltec1400a54d36756e/5fa0d0031f9166620ed88513/vn-18plus.png?&height=100&disable=upscale"
+                            alt="">
+                    </div>
+                </div>
+                
+</body>
+
+</html>

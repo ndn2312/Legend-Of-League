@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Chi Tiết Cập Nhật</title>
+    <link rel="stylesheet" href="./css-code/style-update.css">
+
+    <link rel="website icon" type="png"
+     href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/LoL_icon.svg/1200px-LoL_icon.svg.png">
+    <link rel="stylesheet" href="./icon/fontawesome-free-6.4.2-web/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Lora:ital,wght@1,500&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+    ul {
+      position: relative;
+      top: 7px;
+      left: 100px;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+  
+    }
+  
+    ul li {
+      display: inline-flex;
+      padding: 15px;
+      position: relative;
+      cursor: pointer;
+      color: #f9f9f9;
+      font-size: 12px;
+  
+    }
+  
+    ul li:hover::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      background-color: rgb(0, 179, 255);
+      width: 100%;
+      height: 3px;
+      border-radius: 20px;
+    }
+  
+    ul li:hover {
+      background-color: rgba(128, 128, 128, 0.5);
+      border-radius: 10px;
+    }
+  
+  
+  
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      top: 110%;
+      left: 0;
+      background-color: #292929;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(40, 4, 4, 0.2);
+      z-index: 1;
+  
+    }
+  
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
+  
+    .dropdown-content a {
+      padding: 20px 20px;
+      text-decoration: none;
+      display: block;
+      font-size: 12px;
+      color: #f9f9f9;
+  
+  
+  
+    }
+  
+    .dropdown-content a:hover {
+      background-color: rgba(128, 128, 128, 0.2);
+      padding: 20px;
+      border-radius: 10px;
+  
+    }
+  
+    .dropdown-content a:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      background-color: rgb(0, 179, 255);
+      width: 100%;
+      height: 4px;
+      border-radius: 30px;
+    }
+  
+    .caret {
+      display: inline-block;
+      width: 0;
+      height: 0;
+      margin-left: 5px;
+      vertical-align: middle;
+      border-top: 4px solid;
+      border-right: 4px solid transparent;
+      border-left: 4px solid transparent;
+    }
+  
+    .dropdown:hover .caret {
+      border-top-color: #000;
+    }
+  
+    #carouselExampleSlidesOnly {
+      background-image: url(https://kenh14cdn.com/thumb_w/660/203336854389633024/2022/10/11/photo-5-16654649837541459852675.jpg);
+  
+    }
+  
+    .custom-tooltip {
+      --bs-tooltip-bg: #0BC6E3;
+      --bs-tooltip-color: black;
+      font-size: 14px;
+      width: 200px;
+  
+    }
+    .offcanvas-body a{
+      text-decoration: none;
+      color: black;
+    }
+    .offcanvas-body a:hover{
+      color: red;
+    }
+  </style>
+<body>
+    <div class="header">
+        <button class="btn btn-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+          aria-controls="offcanvasTop">
+          <img src="./img/logo.png">
+          <i class="fa-solid fa-caret-down fa-beat fa-2xs" style="color: #a7a8a9;"></i>
+        </button>
+        <a href="./main.html"><img style="width:30px" src="./img/logo1.PNG" alt=""></a>
+        <ul>
+          <li><b>TRÒ CHƠI</b></li>
+          <li><b><a style="text-decoration:none; color:#fff" href="./hero.html">TƯỚNG</a></b></li>
+          <li class="dropdown">
+            <p class="tintuc"><b>TIN TỨC</b><span class="caret"></span></p>
+            <div class="dropdown-content">
+              <a href="/news.html"><b>TẤT CẢ</b></a>
+              <a href="#"><B>CẬP NHẬT TRÒ CHƠI</B></a>
+              <a href="https://lolesports.com/schedule"><B>ESPORT</B></a>
+              <a href="#"><B>ĐỘI NGŨ PHÁT TRIỂN</B></a>
+              <a href="#"><B>TRUYỀN THÔNG</B></a>
+    
+    
+            </div>
+          </li>
+          <li><b><a style="text-decoration:none; color:#fff" href="./update.html">CHI TIẾT CẬP NHẬT</a></b></li>
+          <li><b>ESPORT <i class="fa-solid fa-arrow-up-right-from-square fa-sm" style="color: #737373;"></i></b></li>
+          <li><B>VŨ TRỤ <i class="fa-solid fa-arrow-up-right-from-square fa-sm" style="color: #737373;"></i></B></li>
+          <li><B>HỖ TRỢ <i class="fa-solid fa-arrow-up-right-from-square fa-sm" style="color: #737373;"></i></B></li>
+        </ul>
+        <div class="list">
+          <a href="" class="fa-solid fa-magnifying-glass fa-beat"></a>
+          <a href="" class="fa-solid fa-triangle-exclamation fa-fade fa-lg"></a>
+          <div class="dropdown-sever">
+            <a href="#" class="fa-solid fa-globe"></a>
+            <div class="dropdown-content-sever">
+              <a href="#">Tiếng Việt</a>
+              <a href="#">English</a>
+              <a href="#">Argentine</a>
+              <a href="#">Brazil</a>
+            </div>
+          </div>
+          <button type="button" class="btn btn-secondary"><b><a style="text-decoration:none; color:#000" target="_blank" href="/index-login.html">ĐĂNG NHẬP</a></b></button>
+
+          <button type="submit" class="btn btn-primary"><b>CHƠI NGAY</b></button>
+        </div>
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasTopLabel">RIOT GAMES</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <p><b>TRÒ CHƠI</b></p>
+            <a href="/main.html"><p>LIÊN MINH HUYỀN THOẠI</p></a>
+            <a href="https://teamfighttactics.leagueoflegends.com/vi-vn/?utm_medium=card2%2Bwww.leagueoflegends.com&utm_source=riotbar" target="_blank"><p>ĐẤU TRƯỜNG CHÂN LÝ</p></a>
+            <a href="https://playvalorant.com/vi-vn/?utm_medium=card3%2Bteamfighttactics.leagueoflegends.com&utm_source=riotbar" target="_blank"><P>VALORANT</P></a>
+            <a href="https://playruneterra.com/vi-vn/?utm_medium=card4%2Bplayvalorant.com&utm_source=riotbar" target="_blank"><P>HUYỀN THOẠI RUNETERRA</P></a>
+            <a href="https://wildrift.leagueoflegends.com/vi-vn/?utm_medium=card5%2Bplayruneterra.com&utm_source=riotbar" target="_blank"><P>LMHT: TỐC CHIẾN</P></a>
+      
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="title-update">
+        <h1><b>CHI TIẾT CẬP NHẬT</b></h1>
+      </div>
+      <div class="main">
+        <ol>
+          <li>
+            <div class="loi">
+
+            <a href="">
+              <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt2f44a27a8b94699b/651e00db3091580235f08dad/101023_Patch_13_20_Notes_Banner.jpg" alt="">
+            </a>
+            <div class="title-text">
+              <span>CẬP NHẬT TRÒ CHƠI</span>
+              <a href=""><h5>Thông Tin Bản Cập Nhật 13.20</h5></a>
+              <p>Riot Riru - 7 ngày trước</p>
+            </div>
+          </div>
+          </li>
+          <li>
+            <div class="loi">
+
+              <a href="">
+                <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt0cfea10deca29f0e/64e7e07cf1ac3dc86df8ff19/2023-Key-Art.jpg" alt="">
+              </a>
+              <div class="title-text">
+                <span>CẬP NHẬT TRÒ CHƠI</span>
+                <a href=""><h5>Thông Tin Bản Cập Nhật 13.19</h5></a>
+                <p>Riot Riru - 7 ngày trước</p>
+              </div>
+            </div>
+
+          </li>
+          <li>
+            <div class="loi">
+
+              <a href="">
+                <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt55548c40c4f96cb8/64f91e9e20c4f98c9f6fb491/LOL_PROMOART_15.jpg" alt="">
+              </a>
+              <div class="title-text">
+                <span>CẬP NHẬT TRÒ CHƠI</span>
+                <a href=""><h5>Thông Tin Bản Cập Nhật 13.18</h5></a>
+                <p>Riot Riru - 7 ngày trước</p>
+              </div>
+            </div>
+
+          </li>
+          <li>
+            <a href="">
+              <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blta5d74955d251449a/64ee3d578b0a26867f268324/082923_Patch_13_17_Notes_Banner_v2.jpg" alt="">
+            </a>
+            <div class="title-text">
+              <span>CẬP NHẬT TRÒ CHƠI</span>
+              <a href=""><h5>Thông Tin Bản Cập Nhật 13.17</h5></a>
+              <p>Riot Riru - 7 ngày trước</p>
+            
+          </div>
+
+          </li>
+          <li>
+            <a href="">
+              <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltb89de420533ddd12/63ed8abf2d0679107a695b35/2020_key_art_Banner.jpg" alt="">
+            </a>
+            <div class="title-text">
+              <span>CẬP NHẬT TRÒ CHƠI</span>
+              <a href=""><h5>Thông Tin Bản Cập Nhật 13.16</h5></a>
+              <p>Riot Riru - 7 ngày trước</p>
+            </div>
+
+          </li>
+          <li>
+            <a href="">
+              <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt8662b5fef5bf5171/64ae06ce4e2d5e9076f76164/071823_Patch_13_14_Notes_Article_Banner.jpg" alt="">
+            </a>
+            <div class="title-text">
+              <span>CẬP NHẬT TRÒ CHƠI</span>
+              <a href=""><h5>Thông Tin Bản Cập Nhật 13.15</h5></a>
+              <p>Riot Riru - 7 ngày trước</p>
+            </div>
+
+          </li>
+        </ol>
+      </div>
+      <div class="end-1">
+        <div class="video-end">
+          <button style="background-color:#0BC6E3;" type="button" class="btn btn-primary"><b>CHƠI MIỄN PHÍ</b></button>
+          <video class="videokt" autoplay muted loop>
+            <source src="./video/Demacia vs Sylas - Season 2020 Cinematic - League of Legends.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div class="container-end">
+        <a href="#"><b>VỀ LIÊN MINH HUYỀN THOẠI</b></a>
+        <a href="#"><b>HỖ TRỢ</b></a>
+        <a href="#"><b>TRANG ESPORT CHÍNH</b></a>
+    
+      </div>
+      <div class="end">
+        <div class="icon-end">
+          <i style="color:#fff;" class="fa-brands fa-facebook"></i>
+          <i style="color:#fff" class="fa-brands fa-instagram"></i>
+          <i style="color:#fff" class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="logo-end">
+          <img src="./img/logoend.PNG" alt="">
+          <img style="position:relative; left:10px" src="./img/logovng.PNG" alt="">
+        </div>
+        <div class="text-end">
+          <span>© 2009-2022 bởi Tập Đoàn Riot Games. LIÊN MINH HUYỀN THOẠI và mọi logo liên quan là nhãn hiệu, nhãn hiệu
+            dịch vụ và/hoặc nhãn hiệu đã đăng ký của Tập Đoàn Riot Games.</span>
+        </div>
+        <div class="note-end">
+          <a href="#"><b>CHÍNH SÁCH BẢO MẬT</b></a>
+          <a href="#"><b>ĐIỀU KHOẢN SỬ DỤNG (RIOT)</b></a>
+          <a href="#"><b>TÙY CHỌN COOKIES</b></a>
+    
+        </div>
+        <div class="img-end">
+          <img
+            src="https://images.contentstack.io/v3/assets/blt0eb2a2986b796d29/bltec1400a54d36756e/5fa0d0031f9166620ed88513/vn-18plus.png?&height=100&disable=upscale"
+            alt="">
+        </div>
+      </div>
+      
+</body>
+</html>

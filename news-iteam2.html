@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AATROX - LOL Champion</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css-code/style-news-iteam2.css">
+    <link rel="website icon" type="png"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/LoL_icon.svg/1200px-LoL_icon.svg.png">
+    <link rel="stylesheet" href="./icon/fontawesome-free-6.4.2-web/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Lora:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+    .list-header {
+        position: relative;
+        top: 7px;
+        left: 100px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .list-header li {
+        display: inline-flex;
+        padding: 15px;
+        position: relative;
+        cursor: pointer;
+        color: #f9f9f9;
+        font-size: 12px;
+
+    }
+
+    .list-header li:hover::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background-color: rgb(0, 179, 255);
+        width: 100%;
+        height: 3px;
+        border-radius: 20px;
+    }
+
+    .list-header li:hover {
+        background-color: rgba(128, 128, 128, 0.5);
+        border-radius: 10px;
+    }
+
+   
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 110%;
+        left: 0;
+        background-color: #292929;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(40, 4, 4, 0.2);
+        z-index: 1;
+
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
+    .dropdown-content a {
+        padding: 20px 20px;
+        text-decoration: none;
+        display: block;
+        font-size: 12px;
+        color: #f9f9f9;
+
+
+
+    }
+
+    .dropdown-content a:hover {
+        background-color: rgba(128, 128, 128, 0.2);
+        padding: 20px;
+        border-radius: 10px;
+
+    }
+
+    .dropdown-content a:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: rgb(0, 179, 255);
+        width: 100%;
+        height: 4px;
+        border-radius: 30px;
+    }
+
+    .caret {
+        display: inline-block;
+        width: 0;
+        height: 0;
+        margin-left: 5px;
+        vertical-align: middle;
+        border-top: 4px solid;
+        border-right: 4px solid transparent;
+        border-left: 4px solid transparent;
+    }
+
+    .dropdown:hover .caret {
+        border-top-color: #000;
+    }
+
+    .image-bk {
+        width: 100%;
+        height: 80vh;
+        background-size: 100%;
+        filter: blur(5px);
+
+        background-repeat: no-repeat;
+        background-image: url('https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt7836ce629f588ad5/65273aadfbc4f60aad9aeddd/101723_TFT_MID923_COMMS_BaronVsT-Hex_Banner.jpg');
+
+    }
+    .offcanvas-body a{
+        text-decoration: none;
+        color: black;
+      }
+      .offcanvas-body a:hover{
+        color: red;
+      }
+</style>
+
+<body>
+    <div class="header">
+        <button class="btn btn-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+            aria-controls="offcanvasTop">
+            <img src="./img/logo.png">
+            <i class="fa-solid fa-caret-down fa-beat fa-2xs" style="color: #a7a8a9;"></i>
+        </button>
+        <a href="./main.html"><img style="width:30px" src="./img/logo1.PNG" alt=""></a>
+        <ul class="list-header">
+            <li><b>TRÒ CHƠI</b></li>
+            <li><b><a style="text-decoration:none; color:#fff" href="./hero.html">TƯỚNG</a></b></li>
+            <li class="dropdown">
+                <p class="tintuc"><b>TIN TỨC</b><span class="caret"></span></p>
+                <div class="dropdown-content">
+                    <a href="/news.html"><b>TẤT CẢ</b></a>
+                    <a href="#"><B>CẬP NHẬT TRÒ CHƠI</B></a>
+                    <a href="#"><B>ESPORT</B></a>
+                    <a href="#"><B>ĐỘI NGŨ PHÁT TRIỂN</B></a>
+                    <a href="#"><B>TRUYỀN THÔNG</B></a>
+                </div>
+            </li>
+            <li><b><a style="text-decoration:none; color:#fff" href="./update.html">CHI TIẾT CẬP NHẬT</a></b></li>
+            <li><b>ESPORT <i class="fa-solid fa-arrow-up-right-from-square fa-sm" style="color: #737373;"></i></b></li>
+            <li><B>VŨ TRỤ <i class="fa-solid fa-arrow-up-right-from-square fa-sm" style="color: #737373;"></i></B></li>
+            <li><B>HỖ TRỢ <i class="fa-solid fa-arrow-up-right-from-square fa-sm" style="color: #737373;"></i></B></li>
+        </ul>
+        <div class="list">
+            <a href="" class="fa-solid fa-magnifying-glass fa-beat"></a>
+            <a href="" class="fa-solid fa-triangle-exclamation fa-fade fa-lg"></a>
+            <a href="" class="fa-solid fa-globe"></a>
+            <button type="button" class="btn btn-secondary"><b><a style="text-decoration:none; color:#fff"
+                        target="_blank" href="/index-login.html">ĐĂNG NHẬP</a></b></button>
+            <button type="submit" class="btn btn-primary"><b>CHƠI NGAY</b></button>
+        </div>
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasTopLabel">RIOT GAMES</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <p><b>TRÒ CHƠI</b></p>
+              <a href="/main.html"><p>LIÊN MINH HUYỀN THOẠI</p></a>
+              <a href="https://teamfighttactics.leagueoflegends.com/vi-vn/?utm_medium=card2%2Bwww.leagueoflegends.com&utm_source=riotbar" target="_blank"><p>ĐẤU TRƯỜNG CHÂN LÝ</p></a>
+              <a href="https://playvalorant.com/vi-vn/?utm_medium=card3%2Bteamfighttactics.leagueoflegends.com&utm_source=riotbar" target="_blank"><P>VALORANT</P></a>
+              <a href="https://playruneterra.com/vi-vn/?utm_medium=card4%2Bplayvalorant.com&utm_source=riotbar" target="_blank"><P>HUYỀN THOẠI RUNETERRA</P></a>
+              <a href="https://wildrift.leagueoflegends.com/vi-vn/?utm_medium=card5%2Bplayruneterra.com&utm_source=riotbar" target="_blank"><P>LMHT: TỐC CHIẾN</P></a>
+        
+              </ul>
+            </div>
+          </div>
+    </div>
+    <div class="image-bk">
+    </div>
+    <div class="background-image">
+        <img src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt7836ce629f588ad5/65273aadfbc4f60aad9aeddd/101723_TFT_MID923_COMMS_BaronVsT-Hex_Banner.jpg"
+            alt="">
+        <div class="caption">
+            <h5>BÀN LUẬN VỀ ĐTCL: BARON ĐẠI CHIẾN T-HEX
+            </h5>
+            <p>Cùng đội ngũ vén màn bức tranh phía sau hậu trường cuộc đại chiến giữa các gã khổng lồ của ĐTCL: Baron &
+                T-Hex.
+
+            </p>
+            <span>TÁC GIẢRODGER “RIOT PRISM” CAUDILL </span>
+        </div>
+    </div>
+    <div class="text">
+        <p>Chào mừng bạn quay trở lại với Bàn Luận Về ĐTCL, chuỗi bài viết nơi các nhà phát triển chia sẻ về tất cả mọi
+            thứ của ĐTCL mà bạn không thể bỏ lỡ. Hôm nay, chúng ta sẽ cùng nhau trò chuyện về quá trình tạo ra hai gã
+            khổng lồ trong Runeterra Tái Hợp: Baron và T-Hex. Nhưng không chỉ dừng lại ở đó, hôm nay chúng ta cũng sẽ
+            nói về sự đón nhận của người chơi sau khi đã cùng nhau trải qua nửa chặng đường mùa giải và ý nghĩa của sự
+            đón nhận này đối với đội ngũ và các phiên bản ĐTCL trong tương lai của chúng tôi! Không chần chừ thêm nữa,
+            hãy để tôi giới thiệu các diễn giả hôm nay:</p>
+        <p>Steve Oh - Trưởng Nhóm Hoạt Ảnh của Runeterra Tái Hợp; Hoạt Ảnh Baron &amp; T-Hex<br><br></p>
+        <p>Jimmy “Riot JimJam” Vu - Họa Sĩ Hiệu Ứng Hình Ảnh Cấp Cao của ĐTCL, chịu trách nhiệm về các hiệu ứng hình ảnh
+            của Baron Nashor<br><br></p>
+        <p>Mike Barquero - Họa Sĩ Hiệu Ứng Hình Ảnh II của ĐTCL, đảm nhiệm việc thực hiện mọi khía cạnh, từ ý tưởng đến
+            triển khai, liên quan đến hiệu ứng hình ảnh của T-Hex<br><br></p>
+        <p>Rodger "Riot Prism" Caudill - Quản Lý Cộng Đồng của ĐTCL, người viết nội dung cho các Bản Cập Nhật, video và
+            nhiều hơn nữa</p>
+        <br>
+        <br>
+        <h2>Khổng Lồ Tranh Đấu cùng Steve Oh</h2>
+        <p>Mọi việc bắt đầu từ lúc Kent đến và nói chúng tôi rằng: "Tôi muốn người chơi có thể trải nghiệm một trận đấu
+            đáng nhớ tại một sân đấu lấy bối cảnh gã khổng lồ T-Hex đối đầu với một con Baron cũng "bự" chẳng kém của
+            người chơi khác trong trận chiến sống còn đỉnh cao giữa các kaiju". Ngay lập tức, chúng tôi biết rằng mình
+            phải làm nổi bật những đơn vị này hơn tất thảy. </p>
+        <br>
+        <p>ĐTCL chưa bao giờ có 2 triệu hồi từ các tộc/hệ khác nhau. Lần gần nhất chúng ta thấy điều đó là trong Thời
+            Đại Công Nghệ cùng Nhà Phát Minh, khi chúng tôi sử dụng Tibbers của Annie và Rồng Công Nghệ từ Summoner’s
+            Rift, nhưng với Baron và T-Hex, chúng tôi sẽ thổi hồn cho các nhân vật bất diệt của Runeterra. Có rất nhiều
+            áp lực khi thực hiện điều này, bởi những nhân vật này đều có lượng người hâm mộ cực khủng cũng như một bề
+            dày truyền thuyết đằng sau. Nhưng chúng tôi đã nỗ lực hết sức. <br></p>
+        <br>
+        <h2>Baron Xuất Hiện cùng Jimmy Vu</h2>
+        <br>
+        <p>Khi biết rằng mình sẽ đưa Baron Nashor vào ĐTCL như một đơn vị mới, chúng tôi đã rất vui mừng. Thực hiện điều
+            này với các tướng là một việc cũng rất độc đáo và thú vị, tuy nhiên với cơ hội lần này, chúng tôi chẳng ngần
+            ngại chớp lấy để có thể thổi hồn và đưa một nhân vật đặc biệt sử thi như Baron vào ĐTCL. Chúng tôi muốn mang
+            lại cảm giác hùng tráng với hình ảnh Baron Nashor bởi hắn có cả 1 di sản trong Summoner's Rift. Để biến điều
+            này thành hiện thực cần có sự kết nối hỗ trợ từ rất nhiều các quy tắc khác nhau.</p>
+        <p>Chúng tôi muốn lễ triệu hồi hắn khi được nhận như một phần thưởng vì chạm mốc 8 Hư Không mang lại cảm giác
+            run sợ và rộng lớn. Baron tiến vào cùng tiếng gầm vang đặc trưng khi được triệu hồi cùng hiệu ứng Diện Tác
+            Dụng làm choáng diện rộng xung quanh. Sau đó, Baron Nashor luân chuyển giữa 3 kỹ năng khác nhau, điều biến
+            hắn trở thành một thế lực đáng gờm khó nhằn và gợi nhắc đến việc xoay tua kỹ năng của hắn trong Summoner’s
+            Rift.<br></p>
+        <br>
+        <div
+            class="style__ResponsiveWrapper-sc-782lfk-5 cghFpU style__Section-sc-i7k9d9-0-vu dxPPbF type-article_html5video">
+            <div class="style__VideoContainer-sc-782lfk-0 fczyNz">
+                <div class="style__VideoContainerInner-sc-782lfk-1 jIRMjU"><video style="width: 860px;" controls=""
+                        autoplay="" poster="" lang="vi-vn" class="style__StyledVideo-sc-782lfk-2 dBGavJ"
+                        __idm_id__="30711810">
+                        <source
+                            src="https://assets.contentstack.io/v3/assets/blt731acb42bb3d1659/blt7752a6bb26339bdb/65273c7ed44a288273fdc535/101723_baron_summoning_anim.mp4"
+                            type="video/mp4">
+                    </video>
+                    <div class="style__SideHighlight-sc-782lfk-3 iVRLqm"></div>
+                    <div class="style__Container-sc-1c9bc3r-0 jXfPGU style__VideoHexOutline-sc-782lfk-4 cTlwEl"></div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <p>Cũng giống như Silco, Sohm và Nomsy từ mùa trước, Baron cũng sẽ mang diện mạo, khung, hoạt ảnh và hiệu ứng
+            hình ảnh mới của riêng mình trong ĐTCL khi xuất hiện như một nhân vật độc nhất. </p>
+        <p>Chúng tôi muốn đảm bảo rằng trong hình mẫu này, Baron sẽ có mặt sau. Khi bạn chơi Summoner’s Rift, bạn không
+            bao giờ có thể thấy phía sau lưng Baron, vậy nên hắn cũng chưa bao giờ có một chiếc "lưng" thực thụ. Vậy nên
+            việc đầu tiên chúng tôi cần làm đó là tặng cho Baron một cặp mông, cũng có thể nói, một mặt sau như ý. <br>
+        </p>
+        <br>
+        <figure style="margin: auto; text-align: center;"><a
+                href="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltf8bb737867e5c787/65273c7cfbc4f6558a9aede2/101723_IMG_BaronModel_01.jpg"
+                target="_blank"><img style="width:860px" data-image="xf1lvrkfvanq"
+                    src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltf8bb737867e5c787/65273c7cfbc4f6558a9aede2/101723_IMG_BaronModel_01.jpg"
+                    data-sys-asset-uid="blte18932e0ed17bb8a" alt="100223_ScoutsFanfareVFXConcept.jpg"></a></figure>
+        <br>
+        <p style="margin: auto; text-align: center;"><a
+                href="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltb7c660b893dba27b/65273c7c01a3377bd55eaa97/101723_IMG_BaronModel_02.jpg"
+                target="_blank"><img style="width:860px" alt="101723_IMG_BaronModel_02.jpg" data-image="5js93ou4mr9j"
+                    data-sys-asset-uid="bltb7c660b893dba27b"
+                    src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltb7c660b893dba27b/65273c7c01a3377bd55eaa97/101723_IMG_BaronModel_02.jpg"></a>
+        </p>
+        <br>
+        <p>Đối với hoạt ảnh, một trong những hoạt ảnh tùy chọn mà tôi thích nhất khi thực hiện Baron chính là khả năng
+            khạc axit. Steve Oh đã tạo ra một hoạt ảnh quá tuyệt vời, khiến nó trông giống như có một lượng lớn axit
+            chạy thẳng từ trong dạ dày và phun trào từ chiếc miệng "xinh" của Baron. Để làm nổi bật chuyển động đó, tôi
+            đã thêm một số hiệu ứng hình ảnh ánh sáng sắc tím tinh tế di chuyển dọc theo lượng axit đó. Chỉ chi tiết nhỏ
+            này nhưng đã khiến Baron của ĐTCL trông ngầu và "sặc" mùi Baron hơn. </p>
+        <p>Tại điểm giao thoa giữa lối chơi và hình ảnh, chúng tôi đã tạo ra một con Baron thực sự quái dị, một con
+            Baron cực "lực" đến cả một tướng đi rừng đã "béo đẫy" cũng không chẳng thể solo được. <br></p>
+        <br>
+        <br>
+        <h2>Xây Dựng T-Hex cùng Mike Barquero</h2>
+        <br>
+        <p>Tôi nhớ khi lần đầu tiên nhìn thấy chủ đề ban đầu của T-Hex trong các buổi đánh giá hoạt họa, tôi đã trở nên
+            cực kỳ hứng thú bởi biết rằng mình sẽ đưa một trong những biểu tượng độc nhất từ Huyền Thoại Runeterra vào
+            ĐTCL. </p>
+        <p>Ban đầu, T-Hex là một con quái vật máy móc siêu sắc cạnh, đáng sợ, phù hợp với bất kỳ bộ phim hiện đại nào
+            yêu cầu một con khủng long bạo chúa cao sừng sững và mang súng. Hình mẫu đó quá ngầu và phù hợp với phong
+            cách của ĐTCL hay là những ảo mộng kỹ thuật của những sinh vật máy móc mà Heimerdinger sẽ thực hiện. Chúng
+            tôi nhanh chóng điều chỉnh hoạt họa để khiến nó trở nên phù hợp hơn với vũ trụ ĐTCL và trở thành một chú
+            khủng long máy móc mang vô số trang bị bắn tia chết người mà chúng tôi có thể thực hiện. Sự dễ thương vô độ
+            của ĐTCL sẽ được lột tả trong phiên bản nhỏ nhắn và ít sức mạnh hơn của T-Hex, thứ sẽ trông phù hợp hơn bởi
+            chí ít khi bạn đang trong chuỗi thua, bạn sẽ có chú khủng long máy "con" đáng yêu này luôn ở cạnh, mang lại
+            cảm giác tích cực như thể nói với bạn rằng "Tôi là vì bạn đó". Điều đáng chú ý là đội ngũ thậm chí đã khám
+            phá ra các phiên bản T-Hex dễ thương hơn nhiều. <br></p>
+        <br>
+        <p style="margin: auto; text-align: center;"><a
+                href="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltbc479ad30eccbe7b/65273c7dc2c54b496c7e4d2e/101723_T-Rex_7.jpg"
+                target="_blank"><img style="width:860px" alt="101723_T-Rex_7.jpg" data-image="4hp5r3ubs96m"
+                    data-sys-asset-uid="bltbc479ad30eccbe7b"
+                    src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltbc479ad30eccbe7b/65273c7dc2c54b496c7e4d2e/101723_T-Rex_7.jpg"></a>
+        </p>
+        <br>
+        <p style="margin: auto; text-align: center;"><a
+                href="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt73821449a08ffe25/65273c7d8332d834640da0de/101723_Thex_early_concept_1.jpg"
+                target="_blank"><img style="width:860px" alt="101723_Thex_early_concept_1.jpg" data-image="sirq2jwc390f"
+                    data-sys-asset-uid="blt73821449a08ffe25"
+                    src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt73821449a08ffe25/65273c7d8332d834640da0de/101723_Thex_early_concept_1.jpg"></a>
+        </p>
+        <br>
+        <p>Cũng giống như thiết kế va hoạt ảnh, chúng tôi đã tạo ra một bộ kỹ năng phù hợp với T-Hex. Chúng tôi phải bắt
+            tay vào việc ngay vì ý tưởng T-Hex đến vào những phút cuối của quá trình sản xuất, đặc biệt là khi chúng tôi
+            phải thực hiện một nhân vật nguyên gốc mới tinh hoàn toàn, một điều khá mới mẻ đối với đội ngũ ĐTCL.</p>
+        <p>Các điểm thiết kế đã vạch định rõ ràng cho cả 2 phiên bản của nhân vật này; một trong số đó có cả hai phiên
+            bản trên bàn đấu cùng lúc, chiến đấu để giành quyền tối cao của Kaiju/quái vật khổng lồ. Để thực hiệc được
+            chủ đề này, ban đầu chúng tôi đã thực hiện 1 chú T-Hex thở ra lửa, nhưng chúng tôi đã quyết định thử một cơ
+            hội khác tuyệt vời hơn để khám phá những ảo tưởng về T-Hex trên cương vị là một trong những vũ khí tuyệt vời
+            nhất mà công nghệ hextech mang lại. Còn gì thể hiện công nghệ hextech này rõ nét hơn những tia laser điện/ma
+            thuật xanh phát ra từ vũ khí hủy diệt khổng lồ này của Piltover chứ? Tia laser đồng thời cho phép chúng tôi
+            "ăn gian" rất nhiều không gian trên màn hình, điều vô cùng quan trọng đối với một đơn vị mang sức mạnh phi
+            thường mà không thực sự làm giảm độ rõ ràng của lối chơi, một sự đại thắng mà kể cả các Thiên Tài hay
+            Heimerdinger cũng đều tâm đắc. À, còn một điều đáng chú ý nữa về phiên bản này, sẽ có một điều bí mật sẽ
+            được bật mí khi T-Hex 4 sao đánh bại Baron, cô sẽ nhận được chiến tích "Chiếc Đầu Baron" như một trang bị.
+            Nó chẳng có tác dụng gì trong trò chơi cả, nhưng để dọa thì cũng ngầu đấy! </p>
+        <br>
+        <br>
+        <div class="style__ResponsiveWrapper-sc-782lfk-5 cghFpU style__Section-sc-i7k9d9-0-vu dxPPbF type-article_html5video"><div class="style__VideoContainer-sc-782lfk-0 fczyNz"><div class="style__VideoContainerInner-sc-782lfk-1 jIRMjU"><video style="width:860px;" controls="" autoplay="" poster="" lang="vi-vn" class="style__StyledVideo-sc-782lfk-2 dBGavJ" __idm_id__="30711811"><source src="https://assets.contentstack.io/v3/assets/blt731acb42bb3d1659/blt3fb36882ea0860d0/65273c88fbc4f612239aede6/101723_thex_charging_and_spewing_laserbeams.mp4" type="video/mp4"></video><div class="style__SideHighlight-sc-782lfk-3 iVRLqm"></div><div class="style__Container-sc-1c9bc3r-0 jXfPGU style__VideoHexOutline-sc-782lfk-4 cTlwEl"></div></div></div></div>
+        
+        <br>
+        <br>
+        <p>Mọi việc sau đó dường như đã ổn thỏa hơn. Sau những khoảng thời gian xáo trộn qua lại giữa các hoạt ảnh và thiết kế, thực hiện luồng công việc mới, nhân vật mới, nhưng đến sau cùng mọi việc đều mang lại cảm giác xứng đáng, không chỉ bởi vì chúng tôi cảm thấy đã tôn trọng và thể hiện đúng truyền thuyết (điều rất quan trọng với chúng tôi) mà cũng bởi vì người chơi đều yêu thích chủ đề T-Hex này khi ra mắt.</p>
+        <p>T-Hex đúng là một thành quả của đam mê. Lịch trình đã vô cùng dày đặc, để có thể thể hiện đúng với chủ đề của Huyền Thoại Runeterra (như đã đề cập*) cũng vô cùng khó khăn, để tạo ra một đơn vị có tầm ảnh hưởng kỹ năng diện rộng để có thể nghênh chiến với Baron cũng là một việc cực kỳ áp lực. Nhưng từ rất nhiều thách thức đó, chúng tôi đã học được rất nhiều bài học và cảm thấy vô cùng hứng thú khi được áp dụng những bài học (và thành công) đó vào trong bản cập nhật tới.  <br></p>
+        <br>
+        <h2>Sự Đón Nhận và Tương Lai Của Các Nhân Vật Nguyên Tác Trong ĐTCL với Tất Cả Mọi Người</h2>
+        <br>    
+        <p>Lịch Trình Phát Triển và kể cả PBE của Runeterra Tái Hợp đã ra mắt được một thời gian nhưng thật sự chúng tôi vẫn vô cùng ngỡ ngàng khi nhận được sự đón nhận và những phản hồi tích cực từ người chơi. Nhìn thấy tất cả sự hứng thú của các bạn đối với thành quả này khiến chúng tôi cảm thấy vô cùng tuyệt vời và cực kỳ có động lực. Đặc biệt là sau khi vượt qua những khó khăn trong việc tạo hình nguyên tác của các đơn vị. Tất cả những phản hồi tích cực này như một minh chứng rằng chúng tôi đang đi đúng hướng và nên tiếp tục đẩy mạnh các chủ đề nhân vật mới nhiều hơn nữa.</p>
+        <br>
+        <p style="margin: auto; text-align: center;"><a href="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltdd4667f855e6a923/65273c7de4eb745c3f8c45ce/101723_Silco_art.JPG" target="_blank"><img style="width:860px" alt="101723_Silco_art.JPG" data-image="uuh74csho4z1" data-sys-asset-uid="bltdd4667f855e6a923" src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltdd4667f855e6a923/65273c7de4eb745c3f8c45ce/101723_Silco_art.JPG"></a></p>
+        <br>    
+        <p>Tạo ra các nhân vật hoàn toàn mới và thổi hồn ĐTCL vào chúng luôn là một thách thức vô cùng thú vị. Kể cả khi chúng tôi làm lại một đơn vị mới, uá trình này không chỉ dừng lại ở việc tạo dựng mẫu và thiết kế trò chơi. Đối với những đơn vị như Silco, Nomsy và kể cả Sohm, chúng tôi muốn tạo ra những câu thoại, hiệu ứng âm thanh, hình nền và kể cả những truyền thuyết trong vũ trụ. Việc này đòi hỏi một lượng lớn công việc cũng như sự góp sức từ tất cả các đội ngũ như quảng bá, PIE hay Sparks (studio bên ngoài), cốt truyện hay thậm chí cả đội ngũ cộng đồng người chơi của chúng tôi tham gia vào rất nhiều công đoạn trong quy trình sản xuất. Đây là tinh hoa của việc chia nhỏ các đội nhóm, chúng tôi thực sự đã đưa tất cả mọi người tham gia vào và từ đó, các thiết kế của chúng tôi cũng mang tất cả kiến thức chuyên môn độc đáo của mỗi người. </p>
+        <p>Sự phát triển của ĐTCL đã và đang vươn xa mãi, nhưng chúng tôi vẫn muốn tiếp tục thực hiện nghiêm túc mức độ hợp tác liên ngành này và chẳng có minh chứng nào rõ nét hơn bản cập nhật tiếp theo của chúng tôi. Thật tuyệt khi ĐTCL từ một chế độ chơi phát triển thành tựa game đỉnh cao và lớn mạnh vượt xa khỏi những nội dung mang tới từ Liên Minh Huyền Thoại. Chúng tôi nghĩ rằng người chơi trên khắp cá tựa game của Riot sẽ đều bất ngờ với cách ĐTCL vươn tầm lớn mạnh, trở thành tựa game đứng đầu trong thể loại này với phong cách nhẹ nhàng và nguyên bản của riêng chúng tôi. Chúng tôi vô cùng háo hức cam kết rằng với những chủ đề sẽ ra mắt trong các bản cập nhật trong tương lai, các tựa game khác của Riot có thể sẽ phải "mượn" chủ đề của chúng tôi như cách chúng tôi đã làm trong quá khứ. </p>
+        <br>
+        <br>
+        <hr>
+    </div>
+
+
+    <div class="end-1">
+        <div class="video-end">
+            <button style="background-color:#0BC6E3;" type="button" class="btn btn-primary"><b>CHƠI MIỄN
+                    PHÍ</b></button>
+            <video class="videokt" autoplay muted loop>
+                <source src="./video/Demacia vs Sylas - Season 2020 Cinematic - League of Legends.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="container-end">
+        <a href="#"><b>VỀ LIÊN MINH HUYỀN THOẠI</b></a>
+        <a href="#"><b>HỖ TRỢ</b></a>
+        <a href="#"><b>TRANG ESPORT CHÍNH</b></a>
+
+    </div>
+    <div class="end">
+        <div class="icon-end">
+            <i style="color:#fff;" class="fa-brands fa-facebook"></i>
+            <i style="color:#fff" class="fa-brands fa-instagram"></i>
+            <i style="color:#fff" class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="logo-end">
+            <img src="./img/logoend.PNG" alt="">
+            <img style="position:relative; left:10px" src="./img/logovng.PNG" alt="">
+        </div>
+        <div class="text-end">
+            <span>© 2009-2022 bởi Tập Đoàn Riot Games. LIÊN MINH HUYỀN THOẠI và mọi logo liên quan là nhãn
+                hiệu, nhãn
+                hiệu
+                dịch vụ và/hoặc nhãn hiệu đã đăng ký của Tập Đoàn Riot Games.</span>
+        </div>
+        <div class="note-end">
+            <a href="#"><b>CHÍNH SÁCH BẢO MẬT</b></a>
+            <a href="#"><b>ĐIỀU KHOẢN SỬ DỤNG (RIOT)</b></a>
+            <a href="#"><b>TÙY CHỌN COOKIES</b></a>
+
+        </div>
+        <div class="img-end">
+            <img src="https://images.contentstack.io/v3/assets/blt0eb2a2986b796d29/bltec1400a54d36756e/5fa0d0031f9166620ed88513/vn-18plus.png?&height=100&disable=upscale"
+                alt="">
+        </div>
+    </div>
+    
+</body>
+
+</html>

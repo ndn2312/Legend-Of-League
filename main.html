@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liên Minh Huyền Thoại</title>
+
+  <link rel="stylesheet" href="./css-code/style-main.css">
+
+  <link rel="website icon" type="png"
+     href="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/LoL_icon.svg/1200px-LoL_icon.svg.png">
+  <link rel="stylesheet" href="./icon/fontawesome-free-6.4.2-web/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Lora:ital,wght@1,500&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+  ul {
+    position: relative;
+    top: 7px;
+    left: 100px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  ul li {
+    display: inline-flex;
+    padding: 15px;
+    position: relative;
+    cursor: pointer;
+    color: #f9f9f9;
+    font-size: 12px;
+
+  }
+
+  ul li:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: rgb(0, 179, 255);
+    width: 100%;
+    height: 3px;
+    border-radius: 20px;
+  }
+
+  ul li:hover {
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 10px;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background-color: #292929;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(40, 4, 4, 0.2);
+    z-index: 1;
+
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+  .dropdown-content a {
+    padding: 20px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    color: #f9f9f9;
+
+
+
+  }
+
+  .dropdown-content a:hover {
+    background-color: rgba(128, 128, 128, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+
+  }
+
+  .dropdown-content a:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 179, 255);
+    width: 100%;
+    height: 4px;
+    border-radius: 30px;
+  }
+
+  .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 5px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+  }
+
+  .dropdown:hover .caret {
+    border-top-color: #000;
+  }
+
+  #carouselExampleSlidesOnly {
+    background-image: url(https://kenh14cdn.com/thumb_w/660/203336854389633024/2022/10/11/photo-5-16654649837541459852675.jpg);
+
+  }
+
+  .custom-tooltip {
+    --bs-tooltip-bg: #0BC6E3;
+    --bs-tooltip-color: black;
+    font-size: 14px;
+    width: 200px;
+
+  }
+  .offcanvas-body a{
+    text-decoration: none;
+    color: black;
+  }
+  .offcanvas-body a:hover{
+    color: red;
+  }
+
+</style>
+
+<body>
+
+  <div class="header">
+    <button class="btn btn-link" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+      aria-controls="offcanvasTop">
+      <img src="./img/logo.png">
+      <i class="fa-solid fa-caret-down fa-beat fa-2xs" style="color: #a7a8a9;"></i>
+    </button>
+    <a href="./main.html"><img style="width:30px" src="./img/logo1.PNG" alt=""></a>
+    <ul>
+      <li><b>TRÒ CHƠI</b></li>
+      <li><b><a style="text-decoration:none; color:#fff" href="./hero.html">TƯỚNG</a></b></li>
+      <li class="dropdown">
+        <p class="tintuc"><b>TIN TỨC</b><span class="caret"></span></p>
+        <div class="dropdown-content">
+          <a href="./news.html"><b>TẤT CẢ</b></a>
+          <a href="#"><B>CẬP NHẬT TRÒ CHƠI</B></a>
+          <a href="https://lolesports.com/schedule"><B>ESPORT</B></a>
+          <a href="#"><B>ĐỘI NGŨ PHÁT TRIỂN</B></a>
+          <a href="#"><B>TRUYỀN THÔNG</B></a>
+
+
+        </div>
+      </li>
+      <li><b><a style="text-decoration:none; color:#fff" href="./update.html">CHI TIẾT CẬP NHẬT</a></b></li>
+      <li><b><a style="text-decoration:none; color:#fff" target="_blank" href="https://lolesports.com/schedule?leagues=worlds,wqs,msi">ESPORT</a><i class="fa-solid fa-arrow-up-right-from-square fa-sm" style="color: #737373;"></i></b></li>
+      <li><B><a style="text-decoration:none; color:#fff" target="_blank" href="https://universe.leagueoflegends.com/vn_VN/">VŨ TRỤ</a> <i class="fa-solid fa-arrow-up-right-from-square fa-sm" style="color: #737373;"></i></B></li>
+      <li><B><a style="text-decoration:none; color:#fff" target="_blank" href="https://support.riotgames.com/hc/vi">HỖ TRỢ </a><i class="fa-solid fa-arrow-up-right-from-square fa-sm" style="color: #737373;"></i></B></li>
+    </ul>
+    <div class="list">
+      <a href="" class="fa-solid fa-magnifying-glass fa-beat"></a>
+      <a href="" class="fa-solid fa-triangle-exclamation fa-fade fa-lg"></a>
+      <div class="dropdown-sever">
+        <a href="#" class="fa-solid fa-globe"></a>
+        <div class="dropdown-content-sever">
+          <a href="#">Tiếng Việt</a>
+          <a href="#">English</a>
+          <a href="#">Argentine</a>
+          <a href="#">Brazil</a>
+        </div>
+      </div>
+      <button type="button" class="btn btn-secondary"><b><a style="text-decoration:none; color:#fff" target="_blank" href="/index-login.html">ĐĂNG NHẬP</a></b></button>
+      <button type="submit" class="btn btn-primary"><b>CHƠI NGAY</b></button>
+    </div>
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasTopLabel">RIOT GAMES</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p><b>TRÒ CHƠI</b></p>
+        <a href="/main.html"><p>LIÊN MINH HUYỀN THOẠI</p></a>
+        <a href="https://teamfighttactics.leagueoflegends.com/vi-vn/?utm_medium=card2%2Bwww.leagueoflegends.com&utm_source=riotbar" target="_blank"><p>ĐẤU TRƯỜNG CHÂN LÝ</p></a>
+        <a href="https://playvalorant.com/vi-vn/?utm_medium=card3%2Bteamfighttactics.leagueoflegends.com&utm_source=riotbar" target="_blank"><P>VALORANT</P></a>
+        <a href="https://playruneterra.com/vi-vn/?utm_medium=card4%2Bplayvalorant.com&utm_source=riotbar" target="_blank"><P>HUYỀN THOẠI RUNETERRA</P></a>
+        <a href="https://wildrift.leagueoflegends.com/vi-vn/?utm_medium=card5%2Bplayruneterra.com&utm_source=riotbar" target="_blank"><P>LMHT: TỐC CHIẾN</P></a>
+  
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  
+  <div class="intro">
+    <video class="video-bg" autoplay muted loop>
+      <source src="./video/Enemy (Imagine Dragons, JID) - Worlds 2021 Show Open Presented by Mastercard.mp4"
+        type="video/mp4">
+    </video>
+  </div>
+  <div class="logolmht">
+    <div class="logoLOL">
+      <img src="./img/logo-vi-vn-b916383778c4268f735fac73843a51ef (1).png" alt="lmht">
+      <div class="playfree">
+        <a href="https://lienminh.vnggames.com/dang-ky/"><button style="color: black; background:rgb(0, 238, 255) "
+            type="button" class="btn btn-primary"><b>CHƠI
+              MIỄN PHÍ</b></button></a>
+      </div>
+    </div>
+    <video class="video-bg1" autoplay muted loop>
+      <source src="./video/Awaken - Season 2019 Cinematic - League of Legends (ft. Valerie Broussard).mp4"
+        type="video/mp4">
+    </video>
+  </div>
+  <div class="grid text">
+    <div class="g-col-6 g-col-md-4">
+      <!-- <img style="  width:130px; height:200px" src="./img/fiora.PNG" alt=""> -->
+      <div class="new">
+        <img style="  width:100px; height:170px" src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt7836ce629f588ad5/65273aadfbc4f60aad9aeddd/101723_TFT_MID923_COMMS_BaronVsT-Hex_Banner.jpg?quality=90&crop=1%3A1&width=720" alt="">
+
+        <a href="">
+          <h5>CẬP NHẬT TRÒ CHƠI</h5>
+          <h1><B>Bàn Luận Về ĐTCL: Baron đại chiến T-Hex</B></h1>
+          <p>Cùng đội ngũ vén màn bức tranh phía sau hậu trường cuộc đại chiến giữa các gã khổng lồ của ĐTCL: Baron & T-Hex.</p>
+        </a>
+      </div>
+    </div>
+    <div class="g-col-6 g-col-md-4">
+
+      <div class="new">
+        <img style="  width:100px; height:170px" src="./img/orn.PNG" alt="">
+
+        <a href="">
+          <h5>ĐỘI NGŨ PHÁT TRIỂN</h5>
+          <h1><B>Tổng Quan Về Lối Chơi: Giải Quyết Vấn Đề Về Trang Bị Thần Thoại</B></h1>
+          <p>Lý do loại bỏ trang bị Thần Thoại và tương lai của hệ thống trang bị.</p>
+        </a>
+      </div>
+
+    </div>
+    <div class="g-col-6 g-col-md-4">
+      <div class="new">
+        <img style="  width:100px; height:170px" src="./img/leona.PNG" alt="">
+        <a href="/news-iteam.html">
+          <h5>CỘNG ĐỒNG</h5>
+          <h1><B>Bình Chọn Chủ Đề Cho Trang Bị Mới!</B></h1>
+          <p>Hãy bình chọn cho chủ đề bạn muốn chúng tôi áp dụng cho trang bị mới, sắp ra mắt vào tháng 01/2024!</p>
+        </a>
+      </div>
+
+    </div>
+    <div style="width:137px; font-size:13px" class="hot"><b>TIN TỨC TIÊU BIỂU</b> <i class="fa-solid fa-minus"></i>
+    </div>
+    <a class="next" href="/news.html">XEM TẤT CẢ <i class="fa-solid fa-arrow-right" style="color: #06f9f5;"></i></a>
+
+  </div>
+  <div class="grid text-center">
+    <div class="g-col-4">
+      <div style="width:100px; font-size:13px" class="hot1"><b>TƯỚNG</b> <i class="fa-solid fa-minus"></i>
+      </div>
+      <h3><i><b>CHỌN NGAY MỘT</b></i></h3>
+      <h1 style="font-size:60px"><b><i>TƯỚNG</i></b></h1>
+      <p>Cho dù thích lao vào giao tranh, thích hỗ trợ đồng đội hoặc cả hai. bạn sẽ luôn tìm thấy vị trí thích hợp dánh
+        cho mình trong Summoner's Rift</p>
+      <button style="background-color:#D6AC4E;" type="button" class="btn btn-primary">KHÁM PHÁ THÊM CÁC VỊ
+        TƯỚNG</button>
+      <button style="background-color:#0BC6E3;" type="button" class="btn btn-primary">CHƠI NGAY</button>
+
+    </div>
+
+  </div>
+  <div class="container">
+
+    <div class="button-group">
+
+      <button class="round-button" onclick="changeToImage(0)">
+        <img class="button-icon" src="./img/st.PNG">
+      </button>
+      <button class="round-button" onclick="changeToImage(1)">
+        <img class="button-icon" src="./img/ds.PNG">
+      </button>
+      <button class="round-button" onclick="changeToImage(2)">
+        <img class="button-icon" src="./img/mager.PNG">
+      </button>
+      <button class="round-button" onclick="changeToImage(3)">
+        <img class="button-icon" src="./img/ad.PNG">
+      </button>
+      <button class="round-button" onclick="changeToImage(4)">
+        <img class="button-icon" src="./img/sp.PNG">
+      </button>
+    </div>
+    <div class="image-container">
+      <img class="image active" src="./img/ys.PNG">
+      <img class="image" src="./img/garen.PNG">
+      <img class="image" src="./img/lux.PNG">
+      <img class="image" src="./img/jinx.PNG">
+      <img class="image" src="./img/lulu.PNG">
+    </div>
+  </div>
+  <div class="skin">
+    <div style="width:205px; font-size:13px" class="hot2"><b>TRANG PHỤC TƯỚNG</b> <i class="fa-solid fa-minus"></i>
+    </div>
+    <div class="image-grid">
+      <img src="./img/garen.PNG" alt="Image 1">
+      <img src="./img/jinx.PNG" alt="Image 2">
+      <img src="./img/lulu.PNG" alt="Image 3">
+      <img src="./img/lux.PNG" alt="Image 4">
+    </div>
+    <div class="grid ">
+      <div class="g-col-4">
+        <h3><b><i>HẠ GỤC KẺ ĐỊCH</i></b></h3>
+        <h1 style="font-size:55px"><b><i>MỘT CÁCH SANG CHẢNH</i></b></h1>
+        <P>Thay đổi diện mạo các vị tướng yêu thích với trang phục để tạo nên điểm nhấn của riêng bạn.</P>
+        <button style="background-color:#0BC6E3;" type="button" class="btn btn-primary">CHƠI NGAY</button>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="map">
+    <h1 class="hot3" style="font-size:13px"><b>CHẾ ĐỘ CHƠI <i class="fa-solid fa-minus"></i></b></h1>
+
+    <div class="col-left">
+      <h5><i><b>RẤT NHIỀU CÁCH</b></i></h5>
+      <H1><b>CHƠI</b></H1>
+      <button style="background-color:#0BC6E3;" type="button" class="btn btn-primary">CHƠI NGAY</button>
+
+    </div>
+    <div class="row">
+      <div class="col">
+        <h3><i><b>Chế độ chơi phổ biến nhất</b></i></h3>
+        <p>Dọn đường, tham gia giao tranh tổng, phá hủy Nhà Chính của địch trước khi Nhà Chính của bạn bị phá hủy.</p>
+      </div>
+
+    </div>
+
+
+    <div class="container">
+
+      <div class="button-group1">
+
+        <button class="round-button" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Summoner's Rift"
+          data-bs-custom-class="custom-tooltip" onclick="changeToVideo(0)">
+          <img class="button-icon"
+            src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt09b786139c8ce289/5d87c2420ca4b562bfff0abe/summonersrift.jpg">
+
+        </button>
+        <button class="round-button" data-bs-toggle="tooltip" data-bs-placement="right"
+          data-bs-title="ĐẤU TRƯỜNG CHÂN LÝ" data-bs-custom-class="custom-tooltip" onclick="changeToVideo(1)">
+          <img class="button-icon"
+            src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt7bb04c5fde905d4b/5e17889f9bcbce578d63ee51/teamfighttactics.jpg">
+
+        </button>
+        <button class="round-button" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="ARAM"
+          data-bs-custom-class="custom-tooltip" onclick="changeToVideo(2)">
+          <img class="button-icon"
+            src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blta1f5513b0207fc88/5d87c2428dbc4162c496928b/howlingabyss.jpg">
+
+        </button>
+
+      </div>
+
+      <div class="video-container1">
+        <video class="video" autoplay muted loop src="./video/Summoner’s Rift Gameplay.mp4">
+
+        </video>
+        <video class="video active" autoplay muted loop
+          src="./video/Teamfight Tactics - Gameplay Trailer - League of Legends.mp4">
+
+        </video>
+        <video class="video" autoplay muted loop src="./video/aram.mp4">
+
+        </video>
+
+      </div>
+    </div>
+  </div>
+  <div class="new-highlight">
+    <div class="col">
+      <span style="font-size:24px"><i><b>RẤT NHIỀU ĐIỀU ĐỂ</b></i></span>
+      <br>
+      <span style="font-size:55px"><I><b>KHÁM PHÁ</b></I></span>
+    </div>
+    <h1 class="hot4" style="font-size:13px"><b>TIÊU ĐIỂM <i class="fa-solid fa-minus"></i></b></h1>
+    <div class="kp">
+      <div class="image1">
+
+        <img
+          src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/bltd6352aa6818513cb/651f44388dc13f297d8edecc/101023_Patch_13.20_Notes_Banner.jpg?quality=90&width=460"
+          alt="Description of the image">
+        <span style="font-size:30px"><b><i>ĐẤU TRƯỜNG CHÂN LÝ - THÔNG TIN BẢN CẬP NHẬT 13.20</i></b></span>
+      </div>
+      <div class="image1">
+        <img
+          src="https://images.contentstack.io/v3/assets/blt731acb42bb3d1659/blt2f44a27a8b94699b/651e00db3091580235f08dad/101023_Patch_13_20_Notes_Banner.jpg?quality=90&width=460"
+          alt="Description of the image">
+        <span style="font-size:30px"><b><i>ĐẤU TRƯỜNG CHÂN LÝ - THÔNG TIN BẢN CẬP NHẬT 13.20</i></b></span>
+
+      </div>
+    </div>
+  </div>
+  <div class="end-1">
+    <div class="video-end">
+      <button style="background-color:#0BC6E3;" type="button" class="btn btn-primary"><b>CHƠI MIỄN PHÍ</b></button>
+      <video class="videokt" autoplay muted loop>
+        <source src="./video/Demacia vs Sylas - Season 2020 Cinematic - League of Legends.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <div class="container-end">
+    <a href="#"><b>VỀ LIÊN MINH HUYỀN THOẠI</b></a>
+    <a href="#"><b>HỖ TRỢ</b></a>
+    <a href="#"><b>TRANG ESPORT CHÍNH</b></a>
+
+  </div>
+  <div class="end">
+    <div class="icon-end">
+      <i style="color:#fff;" class="fa-brands fa-facebook"></i>
+      <i style="color:#fff" class="fa-brands fa-instagram"></i>
+      <i style="color:#fff" class="fa-brands fa-youtube"></i>
+    </div>
+    <div class="logo-end">
+      <img src="./img/logoend.PNG" alt="">
+      <img style="position:relative; left:10px" src="./img/logovng.PNG" alt="">
+    </div>
+    <div class="text-end">
+      <span>© 2009-2022 bởi Tập Đoàn Riot Games. LIÊN MINH HUYỀN THOẠI và mọi logo liên quan là nhãn hiệu, nhãn hiệu
+        dịch vụ và/hoặc nhãn hiệu đã đăng ký của Tập Đoàn Riot Games.</span>
+    </div>
+    <div class="note-end">
+      <a href="#"><b>CHÍNH SÁCH BẢO MẬT</b></a>
+      <a href="#"><b>ĐIỀU KHOẢN SỬ DỤNG (RIOT)</b></a>
+      <a href="#"><b>TÙY CHỌN COOKIES</b></a>
+
+    </div>
+    <div class="img-end">
+      <img
+        src="https://images.contentstack.io/v3/assets/blt0eb2a2986b796d29/bltec1400a54d36756e/5fa0d0031f9166620ed88513/vn-18plus.png?&height=100&disable=upscale"
+        alt="">
+    </div>
+  </div>
+  <script>
+    
+    function changeToImage(index) {
+      const images = document.querySelectorAll('.image');
+      const buttons = document.querySelectorAll('.round-button');
+
+      images.forEach((image) => {
+        image.classList.remove('active');
+      });
+
+      buttons.forEach((button) => {
+        button.classList.remove('active');
+      });
+
+      images[index].classList.add('active');
+      buttons[index].classList.add('active');
+    }
+
+    function changeToVideo(index) {
+      const images = document.querySelectorAll('.video');
+      const buttons = document.querySelectorAll('.round-button');
+
+      images.forEach((image) => {
+        image.classList.remove('active');
+      });
+
+      buttons.forEach((button) => {
+        button.classList.remove('active');
+      });
+
+      images[index].classList.add('active');
+      buttons[index].classList.add('active');
+    }
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+  </script>
+</body>
+</html>
